@@ -15,3 +15,9 @@ var fileServerUsername = "";
 var fileServerPassword = "";
 var fileServerUri = "";
 ```
+
+To change the output path instead of `/tmp/` replace the following variable in the `Program.cs` file.
+
+```
+var downloadedFileOutputPath = "/tmp/";
+```
