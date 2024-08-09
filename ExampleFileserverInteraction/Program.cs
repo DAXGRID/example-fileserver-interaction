@@ -30,6 +30,10 @@ internal static class Program
             fileServerPassword,
             new Uri(fileServerUri));
 
+        // Example uploading file
+        await httpFileServer.UploadFile("/mylocalefilepath.txt", "/")
+            .ConfigureAwait(false);
+
         var files = await httpFileServer.ListFiles("/");
         foreach (var file in files)
         {
